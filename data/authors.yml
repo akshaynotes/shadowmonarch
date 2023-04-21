@@ -303,6 +303,14 @@ arpendu:
   linkedin: "arpendu-kumar-garai-61609a9b"
   bio: "I am a full-Stack developer with deep knowledge in Java, Microservices, Cloud Computing, Big Data, MERN, Javascript, Golang, and its relative frameworks. Besides coding and programming, I am a big foodie, love cooking, and love to travel."
 
+akshay:
+  name: "Akshay Ware"
+  email: "akshay.ware99@gmail.com"
+  avatar: "/images/authors/akshay.jpg"
+  github: "akshaynotes"
+  linkedin: "akshay-ware"
+  bio: I am a full-Stack developer with deep knowledge in Java, Microservices, Cloud Computing, Golang, and its relative frameworks. Besides coding and programming, I am a big foodie, love cooking, and love to travel."
+
 ranjani:
   name: "Ranjani Harish"
   email: "ranjani.harish12@gmail.com"

@@ -40,7 +40,6 @@ custom_script = ""
 
 
 [analytics]
-google_analytics_3_id = "G-WSQGWJ6LWW"
 google_analytics_4_id = "G-WSQGWJ6LWW"
 plausible_domain = "shadowmonarch.com"
 

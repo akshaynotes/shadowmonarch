@@ -39,7 +39,9 @@ GraphQL is an excellent solution to a unique problem involving the creation and 
 - A hybrid pattern where applications access and manage data from multiple sources, For example, imagine a dashboard that displays data from multiple sources, such as logging services, backends for consumption statistics, and third-party analytics tools that capture end-user interactions.
 
 ## Prerequisites:
+
 To follow along, you'll need the following:
+
 - Basic knowledge of JavaScript
 - Node and npm installed on your computer: A fundamental understanding of Node.js is required.
 - A Curious mind.
@@ -313,7 +315,7 @@ mongoose
   .then(() => {
     console.log(`Db Connected`);
   })
-  .catch(err => {
+  .catch((err) => {
     console.log(err.message);
   });
 

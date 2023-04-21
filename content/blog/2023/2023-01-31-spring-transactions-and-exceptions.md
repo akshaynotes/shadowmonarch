@@ -1,26 +1,25 @@
 ---
 title: "Demystifying Transactions and Exceptions with Spring"
 categories: ["Spring"]
-date: 2023-01-31 00:00:00 +1100 
+date: 2023-01-31 00:00:00 +1100
 modified: 2023-01-31 00:00:00 +1100
 authors: [arpendu]
 excerpt: "Spring Transactions are quite popular among developers. However, most of us are unaware of the right ways to configure it. In this article, we will demistify this concept."
 image: images/stock/0029-contract-1200x628-branded.jpg
 url: spring-transactions-and-exceptions
 popup: true
-
 ---
 
-One of the most convincing justifications for using the *Spring Framework* is its extensive *transaction* support. For *transaction management*, the Spring Framework offers a stable abstraction. But before we deep-dive into the concepts of transaction management, let’s quickly understand the basic concept of a transaction.
+One of the most convincing justifications for using the _Spring Framework_ is its extensive _transaction_ support. For _transaction management_, the Spring Framework offers a stable abstraction. But before we deep-dive into the concepts of transaction management, let’s quickly understand the basic concept of a transaction.
 
-In terms of Database Management Systems (DBMS), a transaction is a logical processing unit that reads and updates database content. This transaction might consist of a single command, a group of commands, or any other database actions. Any DBMS supporting transactions must guarantee *ACID* qualities to retain the integrity of the data. ACID stands for *Atomicity*, *Consistency*, *Isolation*, and *Durability*.
+In terms of Database Management Systems (DBMS), a transaction is a logical processing unit that reads and updates database content. This transaction might consist of a single command, a group of commands, or any other database actions. Any DBMS supporting transactions must guarantee _ACID_ qualities to retain the integrity of the data. ACID stands for _Atomicity_, _Consistency_, _Isolation_, and _Durability_.
 
-* ***Atomicity*** - Since the transaction is handled as a single unit of activity, it should either be completed in its whole or not at all. No partial execution is allowed. This is referred to as an *"all or nothing"* feature.
-* ***Consistency*** - A database needs to maintain consistency once the transaction is finished. This depicts the accuracy of the database.
-* ***Isolation*** - Transactions execute in isolation from other transactions. Other concurrent transactions won't be able to see incomplete transactions.
-* ***Durability*** - Even if the system crashes or restarts, a successful transaction should be permanently recorded in the database.
+- **_Atomicity_** - Since the transaction is handled as a single unit of activity, it should either be completed in its whole or not at all. No partial execution is allowed. This is referred to as an _"all or nothing"_ feature.
+- **_Consistency_** - A database needs to maintain consistency once the transaction is finished. This depicts the accuracy of the database.
+- **_Isolation_** - Transactions execute in isolation from other transactions. Other concurrent transactions won't be able to see incomplete transactions.
+- **_Durability_** - Even if the system crashes or restarts, a successful transaction should be permanently recorded in the database.
 
-Before we understand what Spring offers *out-of-the-box* to manage transactions, we must understand how a plain JDBC transaction works. A plain standard JDBC transaction management code looks something like the below:
+Before we understand what Spring offers _out-of-the-box_ to manage transactions, we must understand how a plain JDBC transaction works. A plain standard JDBC transaction management code looks something like the below:
 
 ```java
 Connection connection = dataSource.getConnection();
@@ -44,8 +43,8 @@ Finally, the `commit()` method will commit the transaction. In case of any SQL e
 
 Spring supports two types of transaction management:
 
-* ***Programmatic Transaction Management*** - This implies that you must use programming to manage the transaction as we did in the example above. Although it provides you with great flexibility, it is challenging to keep up.
-* ***Declarative Transaction Management*** - This implies that we keep business code and transaction management separate. To manage the transactions, only XML-based settings or annotations are used.
+- **_Programmatic Transaction Management_** - This implies that you must use programming to manage the transaction as we did in the example above. Although it provides you with great flexibility, it is challenging to keep up.
+- **_Declarative Transaction Management_** - This implies that we keep business code and transaction management separate. To manage the transactions, only XML-based settings or annotations are used.
 
 Let’s take a look into each of these transaction management types in Spring.
 
@@ -53,8 +52,8 @@ Let’s take a look into each of these transaction management types in Spring.
 
 Firstly, we will try to understand programmatic transaction management. The Spring Framework provides two means of programmatic transaction management:
 
-* Using `TransactionTemplate`.
-* Implementing `TransactionManager` directly.
+- Using `TransactionTemplate`.
+- Implementing `TransactionManager` directly.
 
 The `TransactionTemplate` and other Spring templates, such as the `JdbcTemplate`, follow a similar methodology. It makes use of the callback method and produces code that is intention driven, meaning that it focuses only on what you want to do.
 
@@ -138,9 +137,9 @@ Now whenever we use the `@Transactional` annotation on a bean, Spring uses a tin
 As we can see from the above diagram, the proxy has two jobs:
 
 - Opening and closing database connections/transactions.
-- And then delegating to the *original `EntityService`*.
+- And then delegating to the _original `EntityService`_.
 
-Other beans, like our `EntityController` in the diagram above, will never know that they are talking to a proxy, and not the *real* bean.
+Other beans, like our `EntityController` in the diagram above, will never know that they are talking to a proxy, and not the _real_ bean.
 
 If we get inside in more detail, then we would find that our `EntityService` gets proxied on the fly, but it is not the proxy that handles the transactional states (open, commit, close, rollback). Instead the proxy delegates the job to a transaction manager.
 
@@ -150,9 +149,9 @@ Spring offers a `PlatformTransactionManager`/`TransactionManager` interface, whi
 
 To put all of the above discussion in a gist:
 
-* If Spring detects `@Transactional` annotation on a bean, it creates a dynamic proxy of the bean.
-* The proxy will then have access to a transaction manager which will open and close transactions/connections.
-* Finally, the transaction manager will simply do what we did as part of our plain old JDBC connection implementation.
+- If Spring detects `@Transactional` annotation on a bean, it creates a dynamic proxy of the bean.
+- The proxy will then have access to a transaction manager which will open and close transactions/connections.
+- Finally, the transaction manager will simply do what we did as part of our plain old JDBC connection implementation.
 
 ## Configuring a `TransactionManager`
 
@@ -177,7 +176,7 @@ public class JPAConfig{
 }
 ```
 
-However, if we use a Spring Boot project and have defined “spring-data-*” or “spring-tx” dependencies on the classpath, then the transaction management would be enabled by default.
+However, if we use a Spring Boot project and have defined “spring-data-\*” or “spring-tx” dependencies on the classpath, then the transaction management would be enabled by default.
 
 ## Usage of `@Transactional` Annotation
 
@@ -220,14 +219,14 @@ public void pay(String source, String destination, double val) {
 
 ## Propagation Levels in Spring Transactions
 
-As the name suggests, *propagation* in a Spring transaction indicates if any service would like to participate or not in the transaction. It would also decide the behavior of a component or service depending on whether or not a transaction has already been generated by the calling component or service.
+As the name suggests, _propagation_ in a Spring transaction indicates if any service would like to participate or not in the transaction. It would also decide the behavior of a component or service depending on whether or not a transaction has already been generated by the calling component or service.
 
 First, we will take two scenarios. In the first scenario, we will have the `registerEntity()` defined that we saw above annotated with transaction propagation:
 
 ```java
 @Service
 public class EntityService {
-    
+
     @Transactional(propagation = Propagation.REQUIRED)
     public Long registerEntity(Entity entity) {
         // execute some SQL statements like
@@ -244,10 +243,10 @@ In the other scenario, consider that this `registerEntity()` method is being cal
 @Service
 @Transactional(propagation=Propagation.REQUIRED)
 public class OrganizationService {
-    
+
     @Autowired
     EntityService entityService;
-    
+
     public void organize() {
         // ...
         entityService.registerEntity(entity);
@@ -258,19 +257,19 @@ public class OrganizationService {
 
 Let’s understand each of these propagation strategies using the above scenarios:
 
-* **REQUIRED** - This is the default propagation. If the `registerEntity()` method is called directly, it creates a new transaction. Whereas if this method is called from `OrganizationService`, since that service is annotated with `@Transactional` then the transaction would make use of the existing transaction called at the service layer rather than the one defined on `registerEntity()`. If the calling service didn’t have the transaction defined, it will create a new transaction.
-* **SUPPORTS** - In this case, if the `registerEntity()` method is called directly, it doesn’t create a new transaction. If the method is called from `OrganizationService`, then it will make use of the existing transaction defined as part of that class, else, it won’t create a new transaction. 
-* **NOT_SUPPORTED** - In this case, if the `registerEntity()` method is called directly, it doesn’t create a new transaction. If the method is called from `OrganizationService`, then it doesn’t make use of the existing transaction neither it creates its own transaction. It runs without a transaction.
-* **REQUIRES_NEW** - If the `registerEntity()` method is called directly, it creates a new transaction. Whereas if this method is called from `OrganizationService`, then the transaction would not make use of the existing transaction called at the service layer instead it would create its own new transaction. If the calling service didn’t have the transaction defined, it will still create a new transaction.
-* **NEVER** - If the `registerEntity()` method is called directly, it doesn’t creates a new transaction. Whereas if this method is called from `OrganizationService`, then the method would throw an exception. If the calling service didn’t have the transaction defined, it will not create a new transaction and run without a transaction.
-* **MANDATORY** - If the `registerEntity()` method is called directly, it will throw an exception. In case, the method is called from `OrganizationService`, then the method makes use of its existing transaction. Else, it will throw an exception.
-* **NESTED** - If a transaction is present, Spring verifies it and marks a save point. This indicates that the transaction rolls back to this save point if our business logic execution encounters an issue. It operates similarly to REQUIRED if there are no ongoing transactions. In the case of `NESTED`, only JDBC connections are supported in `JPATransactionManager`. However, if our JDBC driver supports save points, setting the `nestedTransactionAllowed` value to true also makes the JDBC access code in the JPA transactions function.
+- **REQUIRED** - This is the default propagation. If the `registerEntity()` method is called directly, it creates a new transaction. Whereas if this method is called from `OrganizationService`, since that service is annotated with `@Transactional` then the transaction would make use of the existing transaction called at the service layer rather than the one defined on `registerEntity()`. If the calling service didn’t have the transaction defined, it will create a new transaction.
+- **SUPPORTS** - In this case, if the `registerEntity()` method is called directly, it doesn’t create a new transaction. If the method is called from `OrganizationService`, then it will make use of the existing transaction defined as part of that class, else, it won’t create a new transaction.
+- **NOT_SUPPORTED** - In this case, if the `registerEntity()` method is called directly, it doesn’t create a new transaction. If the method is called from `OrganizationService`, then it doesn’t make use of the existing transaction neither it creates its own transaction. It runs without a transaction.
+- **REQUIRES_NEW** - If the `registerEntity()` method is called directly, it creates a new transaction. Whereas if this method is called from `OrganizationService`, then the transaction would not make use of the existing transaction called at the service layer instead it would create its own new transaction. If the calling service didn’t have the transaction defined, it will still create a new transaction.
+- **NEVER** - If the `registerEntity()` method is called directly, it doesn’t creates a new transaction. Whereas if this method is called from `OrganizationService`, then the method would throw an exception. If the calling service didn’t have the transaction defined, it will not create a new transaction and run without a transaction.
+- **MANDATORY** - If the `registerEntity()` method is called directly, it will throw an exception. In case, the method is called from `OrganizationService`, then the method makes use of its existing transaction. Else, it will throw an exception.
+- **NESTED** - If a transaction is present, Spring verifies it and marks a save point. This indicates that the transaction rolls back to this save point if our business logic execution encounters an issue. It operates similarly to REQUIRED if there are no ongoing transactions. In the case of `NESTED`, only JDBC connections are supported in `JPATransactionManager`. However, if our JDBC driver supports save points, setting the `nestedTransactionAllowed` value to true also makes the JDBC access code in the JPA transactions function.
 
 ## Isolation Levels in Spring Transactions
 
-When two transactions act concurrently on the same database entity, then that database state is defined as *transaction isolation*.  It involves the locking of database records. In other words, it specifies how the database would behave or what happens when one transaction is being processed on a database entity and another concurrent transaction would like to access or update the same database entity at the same time.
+When two transactions act concurrently on the same database entity, then that database state is defined as _transaction isolation_. It involves the locking of database records. In other words, it specifies how the database would behave or what happens when one transaction is being processed on a database entity and another concurrent transaction would like to access or update the same database entity at the same time.
 
-One of the ***ACID (Atomicity, Consistency, Isolation, Durability)*** characteristics is isolation. Therefore, the transaction isolation level is not a feature exclusive to the Spring Framework. We can adjust the isolation level with Spring to match our business logic. We can set the isolation level of a transaction by the annotation:
+One of the **_ACID (Atomicity, Consistency, Isolation, Durability)_** characteristics is isolation. Therefore, the transaction isolation level is not a feature exclusive to the Spring Framework. We can adjust the isolation level with Spring to match our business logic. We can set the isolation level of a transaction by the annotation:
 
 ```java
 @Transactional(isolation = Isolation.READ_UNCOMMITTED)
@@ -278,21 +277,21 @@ One of the ***ACID (Atomicity, Consistency, Isolation, Durability)*** characteri
 
 It has these five enumerations in Spring:
 
-* **DEFAULT** - The default isolation level in Spring is `DEFAULT` which means when Spring creates a new transaction, the isolation level will be the default isolation of our RDBMS. Therefore, we should be careful when we change the database.
+- **DEFAULT** - The default isolation level in Spring is `DEFAULT` which means when Spring creates a new transaction, the isolation level will be the default isolation of our RDBMS. Therefore, we should be careful when we change the database.
 
-* **READ_UNCOMMITTED** - If two transactions are running simultaneously, the second transaction can update both new and existing records before the first transaction is committed. The newly added and altered records are reflected in the first transaction, which is still in progress even though the second transaction is not yet committed.
+- **READ_UNCOMMITTED** - If two transactions are running simultaneously, the second transaction can update both new and existing records before the first transaction is committed. The newly added and altered records are reflected in the first transaction, which is still in progress even though the second transaction is not yet committed.
 
-  *Note: PostgreSQL does not support `READ_UNCOMMITTED` isolation and falls back to `READ_COMMITED` instead. Also, Oracle does not support or allow `READ_UNCOMMITTED`.*
+  _Note: PostgreSQL does not support `READ_UNCOMMITTED` isolation and falls back to `READ_COMMITED` instead. Also, Oracle does not support or allow `READ_UNCOMMITTED`._
 
-* **READ_COMMITTED** - If two transactions are running simultaneously, the second transaction can update both new and existing records before the first transaction is committed. The newly added and altered records are reflected in the first transaction, which is not yet committed after the second transaction is committed.
+- **READ_COMMITTED** - If two transactions are running simultaneously, the second transaction can update both new and existing records before the first transaction is committed. The newly added and altered records are reflected in the first transaction, which is not yet committed after the second transaction is committed.
 
-  *Note: `READ_COMMITTED` is the default level with Postgres, SQL Server, and Oracle.*
+  _Note: `READ_COMMITTED` is the default level with Postgres, SQL Server, and Oracle._
 
-* **REPEATABLE_READ** - If two transactions are running simultaneously, the second transaction cannot update any existing records until the first transaction has been committed, but it can add new records. The newly added records are reflected in the first transaction, which is not yet committed, once the second transaction is committed.
+- **REPEATABLE_READ** - If two transactions are running simultaneously, the second transaction cannot update any existing records until the first transaction has been committed, but it can add new records. The newly added records are reflected in the first transaction, which is not yet committed, once the second transaction is committed.
 
-  *Note: `REPEATABLE_READ` is the default level in MySQL. Oracle does not support `REPEATABLE_READ`.*
+  _Note: `REPEATABLE_READ` is the default level in MySQL. Oracle does not support `REPEATABLE_READ`._
 
-* **SERIALIZABLE** - When two transactions are running simultaneously, it appears as though they are running sequentially, with the first transaction being committed before the second is carried out. This is the highest level of isolation and is considered total isolation. An ongoing transaction is thus invulnerable to the effects of other transactions. But because of the poor performance and potential for deadlock, this could be problematic.
+- **SERIALIZABLE** - When two transactions are running simultaneously, it appears as though they are running sequentially, with the first transaction being committed before the second is carried out. This is the highest level of isolation and is considered total isolation. An ongoing transaction is thus invulnerable to the effects of other transactions. But because of the poor performance and potential for deadlock, this could be problematic.
 
 ## Error handling with `@Transactional`
 
@@ -300,7 +299,7 @@ The `@Transactional` annotation makes use of the attributes `rollbackFor` or `ro
 
 According to the Spring documentation:
 
-> *In its default configuration, the Spring Framework’s transaction infrastructure code marks a transaction for rollback only in the case of runtime, unchecked exceptions. That is, when the thrown exception is an instance or subclass of `RuntimeException`. ( `Error` instances also, by default, result in a rollback). Checked exceptions that are thrown from a transactional method do not result in rollback in the default configuration.*
+> _In its default configuration, the Spring Framework’s transaction infrastructure code marks a transaction for rollback only in the case of runtime, unchecked exceptions. That is, when the thrown exception is an instance or subclass of `RuntimeException`. ( `Error` instances also, by default, result in a rollback). Checked exceptions that are thrown from a transactional method do not result in rollback in the default configuration._
 
 Thus, the default rollback behavior in the declarative approach will rollback on runtime exceptions. So when a checked exception is thrown from our code and we don’t explicitly tell Spring that it should rollback the transaction, then it gets committed.
 

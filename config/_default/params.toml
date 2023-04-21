@@ -1,6 +1,6 @@
 #################### default parameters ################################
 # favicon
-favicon = "images/favicon.png"
+favicon = "images/logo.png"
 # logo
 logo = "images/logo.png"
 logo_small = "images/logo_small.png"
@@ -31,7 +31,7 @@ mainSections = ["blog"]
 # about widget content
 about_widget_content = "Lorem ipsum dolor sit amet, conse tfctetur adipiscing elit. Vel in in donec iaculis tempasus odio nunc laoreet . Libero ullam rgscorper."
 # footer content
-footer_content = "Where the HOW meets the WHY."
+footer_content = "After the clouds, the Sun."
 # copyright
 copyright = "Built upon [Geeky Hugo](https://statichunt.com/themes/hugo-geeky) theme by [Statichunt](https://statichunt.com/)"
 
@@ -52,11 +52,11 @@ preloader = "" # use jpg, png, svg or gif format.
 # Banner
 [banner]
 enable = true
-title_large = "Reflectoring"
-title_small = "Where the HOW meets the WHY."
-image = "images/illustrations/undraw_lightbulb_moment_re_ulyo.png"
+title_large = "Post Nubila Phoebus"
+title_small = "After the clouds, the Sun."
+image = "images/akshay4_cleanup.jpg"
 background_image = ""
-content = "Software development tutorials, thoughts about the software craft, and tips on how to grow as a software engineer."
+content = "Welcome to ShadowMonarch !! As Mozart said 'GO ON A JOURNEY'. This is my personal website, where I post my random thoughts, My software development journey."
 button_label = "Join the Newsletter"
 button_link = "/"
 
@@ -76,7 +76,7 @@ button = "Accept"
 [widgets]
 static = ["skyscraper-ad"]
 # dynamic sidebar widgets can be overriden by setting the "widgets" attribute in the front matter - the last widget will be sticky
-dynamic = ["simplify-form", "stratospheric-ad", "gyhdoca-ad"]
+dynamic = ["stratospheric-ad"]
 
 [ads]
 skyscraper_image = "images/launchdarkly/GALAXY-300x600-GENERAL.png"
@@ -132,21 +132,16 @@ mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074"                  
 
 ############################# social site ########################
 [[social]]
-title = "facebook"
-icon = "fab fa-facebook"                   # themify icon : https://themify.me/themify-icons
-link = "https://facebook.com/reflectoring"
-
-[[social]]
 title = "twitter"
 icon = "fab fa-twitter"                  # themify icon : https://themify.me/themify-icons
-link = "https://twitter.com/TomHombergs"
+link = "https://twitter.com/Akshayware_"
 
 [[social]]
 title = "github"
 icon = "fab fa-github"                              # fontawesome icon pack : https://fontawesome.com/icons/
-link = "https://github.com/thombergs/code-examples"
+link = "https://github.com/akshaynotes"
 
 [[social]]
 title = "linkedin"
 icon = "fab fa-linkedin"                                   # fontawesome icon pack : https://fontawesome.com/icons/
-link = "https://www.linkedin.com/in/tom-hombergs-74048777"
+link = "https://www.linkedin.com/in/akshay-ware"

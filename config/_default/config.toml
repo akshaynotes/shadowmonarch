@@ -1,11 +1,11 @@
 ######################## default configuration ####################
 baseURL = "http://localhost:1313"
-title = "Reflectoring - Where the HOW meets the WHY"
+title = "Post Nubila Phoebus - After the clouds, the Sun"
 theme = "geeky"
 languageName = "En"
 languageCode = "en-us"
 # post pagination
-paginate = "6"
+paginate = "3"
 # post excerpt
 summaryLength = "20"
 # disable language

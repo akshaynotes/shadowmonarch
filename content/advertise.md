@@ -6,7 +6,7 @@ layout: static
 popup: false
 ---
 
-**Looking to put your brand or product in front of more than 150,000 Java developers per month?** 
+**Looking to put your brand or product in front of more than 150,000 Java developers per month?**
 
 Read on, this page details the different sponsorship options.
 
@@ -14,12 +14,12 @@ Read on, this page details the different sponsorship options.
 
 Here's a quick overview of the options for sponsoring reflectoring:
 
-| Sponsorship opportunity                   | Price       | Details |
-|-------------------------------------------|-------------|------------------------------------|
-| **Exclusive Ad Placement**                | $325 / week | [Details](/advertise/#exclusive-ad-placement) |
-| **Sponsored Blog Post**                   | $750        |  [Details](/advertise/#sponsored-blog-post) |
-| **Sponsored Newsletter**                  | $150        | [Details](/advertise/#sponsored-newsletter) |
-| **Sponsored Newsletter with personal endorsement** | $300        | [Details](/advertise/#sponsored-newsletter) |
+| Sponsorship opportunity                            | Price       | Details                                       |
+| -------------------------------------------------- | ----------- | --------------------------------------------- |
+| **Exclusive Ad Placement**                         | $325 / week | [Details](/advertise/#exclusive-ad-placement) |
+| **Sponsored Blog Post**                            | $750        | [Details](/advertise/#sponsored-blog-post)    |
+| **Sponsored Newsletter**                           | $150        | [Details](/advertise/#sponsored-newsletter)   |
+| **Sponsored Newsletter with personal endorsement** | $300        | [Details](/advertise/#sponsored-newsletter)   |
 
 [Get in touch](/advertise/#get-in-touch) if you have any questions or want to discuss a sponsoring opportunity.
 
@@ -35,22 +35,22 @@ The audience of the reflectoring blog consists of mainly **professional JVM deve
 
 Here are some stats (numbers from November, 2021):
 
-| Metric                             | Value     
-|------------------------------------|-----------|
-| **Monthly Active Users**           | 180,000   |
-| **Monthly Sessions**           | > 200,000 |
-| **Newsletter Subscribers**           | 5,000     |
-| **Average Newsletter Open Rate**           | 42%       |
-| **Average Newsletter Click Rate**           | 9%        |
+| Metric                            | Value     |
+| --------------------------------- | --------- |
+| **Monthly Active Users**          | 180,000   |
+| **Monthly Sessions**              | > 200,000 |
+| **Newsletter Subscribers**        | 5,000     |
+| **Average Newsletter Open Rate**  | 42%       |
+| **Average Newsletter Click Rate** | 9%        |
 
 ## Exclusive Ad Placement
 
-You get to be the exclusive advertiser on reflectoring for a time. Exclusive meaning the only *external* advertiser, as I will still show ads for my own products.
+You get to be the exclusive advertiser on reflectoring for a time. Exclusive meaning the only _external_ advertiser, as I will still show ads for my own products.
 
 You can place the following ads:
 
-* a skyscraper ad at the top of the right sidebar (any size up to 260 x 600 pixels)
-* an in-content banner ad about half-way through the page (any size up to 720 x 300 pixels)
+- a skyscraper ad at the top of the right sidebar (any size up to 260 x 600 pixels)
+- an in-content banner ad about half-way through the page (any size up to 720 x 300 pixels)
 
 These ads will appear on all content pages across reflectoring.
 
@@ -64,9 +64,9 @@ I will write a technical blog post about your product or framework and make sure
 
 The article solves a specific problem that users would be searching for via search engines in order to provide value to my developer audience. Some example ideas:
 
-* "Complete Guide to Authentication and Authorization with &lt;Product X&gt; and Spring Boot" (if your product is an auth provider)
-* "Implement Logging with &lt;Product Y&gt; and Java" (if your product is a logging provider)
-* "Testing with &lt;Product Z&gt; in Kotlin" (if your product is a testing tool)
+- "Complete Guide to Authentication and Authorization with &lt;Product X&gt; and Spring Boot" (if your product is an auth provider)
+- "Implement Logging with &lt;Product Y&gt; and Java" (if your product is a logging provider)
+- "Testing with &lt;Product Z&gt; in Kotlin" (if your product is a testing tool)
 
 The finished article will be a well-structured, learning-friendly deep dive into the topic and have something between 1,500 and 2,000 words. It will include code examples from a working example application that I will write myself and host on GitHub.
 
@@ -88,6 +88,6 @@ I can also write the message myself, including an authentic endorsement for your
 
 ## Get in Touch
 
-The above are rough guidelines, so I'm happy to discuss options. Fill out the form below or reach out to [tom@reflectoring.io](mailto:tom@reflectoring.io) to get in touch!
+The above are rough guidelines, so I'm happy to discuss options. Fill out the form below or reach out to [tom@shadowmonarch.com](mailto:tom@shadowmonarch.com) to get in touch!
 
 {{% sponsor-form %}}

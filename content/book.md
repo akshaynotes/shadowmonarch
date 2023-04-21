@@ -79,24 +79,24 @@ This book fills a void by providing a hands-on approach to the Hexagonal archite
 
 ## All About Hexagonal Architecture
 
-* Learn the concepts behind "Clean Architecture" and "Hexagonal Architecture".
-* Explore a hands-on approach of implementing a Hexagonal architecture with example code [on GitHub](https://github.com/thombergs/buckpal).
-* Develop your domain code independent of database or web concerns.
+- Learn the concepts behind "Clean Architecture" and "Hexagonal Architecture".
+- Explore a hands-on approach of implementing a Hexagonal architecture with example code [on GitHub](https://github.com/thombergs/buckpal).
+- Develop your domain code independent of database or web concerns.
 
 {{% image src="/images/gyhdoca/hexagonal-architecture.png" %}}
 
 ## Get a Grip on Your Layers
 
-* Learn about potential problems of the common layered architecture style.
-* Free your domain layer of oppressive dependencies using dependency inversion.
-* Structure your code in an architecturally expressive way.
-* Use different methods to enforce architectural boundaries.
-* Learn the consequences of shortcuts and when to accept them.
-* ... and [more](#table-of-contents).
+- Learn about potential problems of the common layered architecture style.
+- Free your domain layer of oppressive dependencies using dependency inversion.
+- Structure your code in an architecturally expressive way.
+- Use different methods to enforce architectural boundaries.
+- Learn the consequences of shortcuts and when to accept them.
+- ... and [more](#table-of-contents).
 
 {{% image src="/images/gyhdoca/dependencies.png" %}}
 
-## What Readers Say 
+## What Readers Say
 
 > Tom Hombergs has done a terrific job in explaining clean architecture - from concepts to code. Really wish more technical books would be as clear as that one!
 
@@ -135,4 +135,4 @@ Manos Tzagkarakis - Java Developer at Datawise
 
 ## Questions? Comments?
 
-Drop me an [email](mailto:tom@reflectoring.io).
+Drop me an [email](mailto:tom@shadowmonarch.com).

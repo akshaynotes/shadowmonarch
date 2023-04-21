@@ -17,19 +17,17 @@ The reflectoring blog aims to provide software developers with a _**comprehensiv
 - **An article is easy to read**: it is structured logically, uses conversational language with simple sentences and paragraphs and without fancy words.
 - **An article generates “aha” moments**: it explains the “why” a certain solution works and in which cases the solution may not be the best one.
 
-
 ## General Guidelines
 
 ### Example Articles
 
 For your orientation, here’s a list of some of the most successful articles on reflectoring (success = high number of readers and positive reader feedback):
 
--   [https://reflectoring.io/spring-boot-test/](https://reflectoring.io/spring-boot-test/)
--   [https://reflectoring.io/bean-validation-with-spring-boot/](https://reflectoring.io/bean-validation-with-spring-boot/)
--   [https://reflectoring.io/unit-testing-spring-boot/](https://reflectoring.io/unit-testing-spring-boot/)
--   [https://reflectoring.io/spring-boot-conditionals/](https://reflectoring.io/spring-boot-conditionals/)
--   [https://reflectoring.io/spring-boot-data-jpa-test/](https://reflectoring.io/spring-boot-data-jpa-test/)
-
+- [https://shadowmonarch.com/spring-boot-test/](https://shadowmonarch.com/spring-boot-test/)
+- [https://shadowmonarch.com/bean-validation-with-spring-boot/](https://shadowmonarch.com/bean-validation-with-spring-boot/)
+- [https://shadowmonarch.com/unit-testing-spring-boot/](https://shadowmonarch.com/unit-testing-spring-boot/)
+- [https://shadowmonarch.com/spring-boot-conditionals/](https://shadowmonarch.com/spring-boot-conditionals/)
+- [https://shadowmonarch.com/spring-boot-data-jpa-test/](https://shadowmonarch.com/spring-boot-data-jpa-test/)
 
 These articles have in common that they explain a certain Spring Boot feature in-depth, answering a specific question the reader probably googled for, and more questions the reader didn’t even have yet.
 
@@ -37,7 +35,7 @@ It’s important to note that these articles don’t just reiterate the content 
 
 ### Article Categories
 
-The main categories of the reflectoring blog contain tutorials about the [Java](https://reflectoring.io/categories/java) programming language in general and the [Spring Boot](https://reflectoring.io/categories/spring-boot) framework in particular. Also of interest are articles about software development and architecture best practices in a category called [Software Craft](https://reflectoring.io/categories/craft).
+The main categories of the reflectoring blog contain tutorials about the [Java](https://shadowmonarch.com/categories/java) programming language in general and the [Spring Boot](https://shadowmonarch.com/categories/spring-boot) framework in particular. Also of interest are articles about software development and architecture best practices in a category called [Software Craft](https://shadowmonarch.com/categories/craft).
 
 Any topic that is valuable to software engineers, is interesting, though, so don't hesitate to propose topics that don't fit into these categories.
 
@@ -56,9 +54,9 @@ Online readers don’t want to spend much time on understanding a topic. It’s 
 Some examples:
 
 | Don't write this | Write this instead |
-|---------------|-----------------|
-| “utilize” | “use”|
-| “In order to” | “to” |
+| ---------------- | ------------------ |
+| “utilize”        | “use”              |
+| “In order to”    | “to”               |
 
 Copy your text into [Grammarly](https://app.grammarly.com/), which provides some great simplification suggestions even on the free tier.
 
@@ -74,18 +72,18 @@ Texts are more engaging if they read like a conversation between you and the rea
 
 When explaining how to do something, however, use “we” rather than “you”, as too much “do this” and “do that” can quickly sound condescending (I’m aware that I’m doing it this document :)).
 
-| Don't write this | Write this instead |
-|---------------|-----------------|
-|“Add an annotation to class X to do Y” | “We add an annotation to class X to do Y”|
-| “The next step is to do X” | “Let’s do X next”|
+| Don't write this                       | Write this instead                        |
+| -------------------------------------- | ----------------------------------------- |
+| “Add an annotation to class X to do Y” | “We add an annotation to class X to do Y” |
+| “The next step is to do X”             | “Let’s do X next”                         |
 
 ### Be Inclusive
 
 We don’t want our texts to offend anyone, so make sure to use inclusive language. Don’t assume the gender of people you use in examples. Use plural instead. Where plural isn’t applicable, use it anyways (it’s called the “single they”).
 
-| Don't write this | Write this instead                                                                                                                                                                                               |
-|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| “These guys...”| “These developers...”                                                                                                                                                                                         |
+| Don't write this                                                                  | Write this instead                                                                                                                                                                                            |
+| --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| “These guys...”                                                                   | “These developers...”                                                                                                                                                                                         |
 | “By doing this, we make life easier for the developer. He will thank you for it.” | “By doing this, we make life easier for the developers. They will thank you for it.” <br/> or, using “single they”: <br/> “By doing this, we make life easier for the developer. They will thank you for it.” |
 
 ### Make It Personal
@@ -100,10 +98,10 @@ Add a bit of dry humor if the situation allows it. We’re not writing a doctora
 
 Usive active voice instead of passive voice wherever possible. This makes the reading much less convoluted and thus easier.
 
-| Don't write this | Write this instead |
-|---------------|-----------------|
-|“This can be done by…”| “We can do this by...”|
-|“This code will be executed by method XYZ.” | “Method XYZ executes this code.”|
+| Don't write this                            | Write this instead               |
+| ------------------------------------------- | -------------------------------- |
+| “This can be done by…”                      | “We can do this by...”           |
+| “This code will be executed by method XYZ.” | “Method XYZ executes this code.” |
 
 ## Conventions
 
@@ -141,9 +139,9 @@ Link to sources you used while researching for the article. These can be referen
 
 Make the link part of a natural sentence instead of adding a word just for the link.
 
-| Don't write this | Write this instead |
-|---------------|-----------------|
-| “You can find the reference manual [here](http://www.example.com).” | “You can find more information in the [reference manual](http://www.example.com).”|
+| Don't write this                                                    | Write this instead                                                                 |
+| ------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| “You can find the reference manual [here](http://www.example.com).” | “You can find more information in the [reference manual](http://www.example.com).” |
 
 ## Quality
 
@@ -157,7 +155,7 @@ After your own review, please paste it into the free tier service of [Grammarly]
 
 ### Add Cross-Links to Other reflectoring Articles
 
-Do a quick Google search restricted to “site:reflectoring.io” to find out if there are other articles about a similar topic. If yes, think of a way to naturally link to them within the article to create
+Do a quick Google search restricted to “site:shadowmonarch.com” to find out if there are other articles about a similar topic. If yes, think of a way to naturally link to them within the article to create
 
 ## Working with Code Examples
 
@@ -233,7 +231,7 @@ You can use standard Markdown tables:
 
 ```markdown
 | Header 1 | Header 2 |
-|----------|----------|
+| -------- | -------- |
 | One      | Two      |
 | Three    | Four     |
 ```
@@ -241,7 +239,7 @@ You can use standard Markdown tables:
 They will be rendered into nice-looking tables like this:
 
 | Header 1 | Header 2 |
-|----------|----------|
+| -------- | -------- |
 | One      | Two      |
 | Three    | Four     |
 
@@ -259,32 +257,35 @@ For information that doesn't fit into the text, but rather into an "aside", you 
 
 {{% danger title="A danger box" %}}
 Use this markup to create a "danger" box:
+
 ```
 {{%/* danger title="Title of your danger box" */%}}
 Any markdown content
 {{%/* /danger */%}}
 ```
+
 {{% /danger %}}
 
 {{% warning title="A warning box" %}}
 Use this markup to create a "warning" box:
+
 ```
 {{%/* warning title="Title of your warning box" */%}}
 Any markdown content
 {{%/* /warning */%}}
 ```
+
 {{% /warning %}}
 
 {{% info title="An info box" %}}
 Use this markup to create an "info" box:
+
 ```
 {{%/* info title="Title of your info box" */%}}
 Any markdown content
 {{%/* /info */%}}
 ```
+
 {{% /info %}}
-
-
-
 
 {{% author-form %}}

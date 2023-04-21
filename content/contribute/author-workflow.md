@@ -10,7 +10,7 @@ popup: false
 
 This document explains the workflow of writing articles for reflectoring to make our cooperation as productive as possible for both of us.
 
-If you have any questions at all, don’t hesitate to reach out via email to [tom@reflectoring.io](mailto:tom@reflectoring.io).
+If you have any questions at all, don’t hesitate to reach out via email to [tom@shadowmonarch.com](mailto:tom@shadowmonarch.com).
 
 ## Overview
 
@@ -80,7 +80,7 @@ Prepare an outline with section headings and a few bullet-points with the conten
 
 The outline is just an orientation and a means of checking that we have the same understanding of the topic. It’s better to discuss changes to an outline than changes to an already written article - it avoids unnecessary work. If, while writing, you find that you need to deviate from the outline, do it.
 
-Post the outline in the description of the topic card (Trello supports Markdown!) and mention the editors  (`@Reflectoring Editors`) in a comment to let your editor know to review the outline.
+Post the outline in the description of the topic card (Trello supports Markdown!) and mention the editors (`@Reflectoring Editors`) in a comment to let your editor know to review the outline.
 
 ## 3 - An Editor Reviews the Outline
 

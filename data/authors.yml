@@ -1,6 +1,6 @@
 tom:
   name: "Tom Hombergs"
-  email: "tom@reflectoring.io"
+  email: "tom@shadowmonarch.com"
   avatar: "/images/tom/tom.png"
   github: "thombergs"
   stackoverflow: "2375843/tom"
@@ -12,7 +12,7 @@ tom:
   bio: "As a professional software engineer, consultant, architect, general problem solver,
           I've been practicing the software craft for more than fifteen years and I'm still learning
           something new every day. I love sharing the things I learned, so you (and future me)
-          can get a head start. That's why I founded reflectoring.io."
+          can get a head start. That's why I founded shadowmonarch.com."
 mateo:
   name: "Mateo Stjepanović"
   email: "mateostjepanovic@gmail.com"

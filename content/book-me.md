@@ -12,11 +12,11 @@ I can help you! You can book me remotely for an hour at a time - once, or regula
 
 **Take advantage of me as a wildcard to get quick results without binding to a contract!**
 
-Not sure if I am the right person? Have a look at my [LinkedIn profile](https://www.linkedin.com/in/thombergs/) or [shoot me an e-mail](mailto:tom@reflectoring.io) with your questions.
+Not sure if I am the right person? Have a look at my [LinkedIn profile](https://www.linkedin.com/in/thombergs/) or [shoot me an e-mail](mailto:tom@shadowmonarch.com) with your questions.
 
 My current rate is $110 / hour.
 
-[Get in touch](mailto:tom@reflectoring.io) to discuss ideas and questions or [book me directly via Calendly](https://calendly.com/thombergs/60min) and I'll get in touch with you.
+[Get in touch](mailto:tom@shadowmonarch.com) to discuss ideas and questions or [book me directly via Calendly](https://calendly.com/thombergs/60min) and I'll get in touch with you.
 
 ## One-on-One Coaching
 
@@ -60,6 +60,6 @@ Depending on how familiar I am with the topic myself, I will bill some hours to 
 
 ## Contact
 
-The above a rough ideas of what I can help you with, so I'm happy to discuss options. Submit the form below or reach out to [tom@reflectoring.io](mailto:tom@reflectoring.io) to get in touch!
+The above a rough ideas of what I can help you with, so I'm happy to discuss options. Submit the form below or reach out to [tom@shadowmonarch.com](mailto:tom@shadowmonarch.com) to get in touch!
 
 {{% book-me-form %}}

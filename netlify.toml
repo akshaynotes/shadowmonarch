@@ -18,7 +18,7 @@
   Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
 
 [context.production]
-command = "hugo --minify --gc --baseUrl https://reflectoring.io"
+command = "hugo --minify --gc --baseUrl https://shadowmonarch.com/"
 
 [context.production.environment]
 HUGO_ENV = "production"

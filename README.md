@@ -1,5 +1,6 @@
-# reflectoring.io
-This is the repository for the [reflectoring.io](https://reflectoring.io) blog on software engineering and Java topics.
+# shadowmonarch.com
+
+This is the repository for the [shadowmonarch.com](https://shadowmonarch.com) blog on software engineering and Java topics.
 
 This blog runs on [Hugo](https://gohugo.io/), a static site generator.
 
@@ -37,4 +38,4 @@ You can then browse the site via [http://localhost:1313](http://localhost:1313).
 
 ## Contributing to this Blog
 
-See the [Become an Author](https://reflectoring.io/contribute/become-an-author) page on the blog.
+See the [Become an Author](https://shadowmonarch.com/contribute/become-an-author) page on the blog.

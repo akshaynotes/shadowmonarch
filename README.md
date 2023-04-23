@@ -35,7 +35,3 @@ hugo server
 ```
 
 You can then browse the site via [http://localhost:1313](http://localhost:1313).
-
-## Contributing to this Blog
-
-See the [Become an Author](https://shadowmonarch.com/contribute/become-an-author) page on the blog.

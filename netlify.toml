@@ -96,18 +96,6 @@ HUGO_ENV = "staging"
   force = true
 
 [[redirects]]
-  from = "/write-for-me"
-  to = "/contribute/become-an-author"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/write-with-me"
-  to = "/contribute/become-an-author"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/2022-03-15-feature-flags-make-or-buy"
   to = "/feature-flags-make-or-buy"
   status = 301

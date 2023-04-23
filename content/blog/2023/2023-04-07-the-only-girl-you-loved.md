@@ -7,7 +7,7 @@ authors: [akshay]
 excerpt: "POV : the only girl you loved"
 image: images/stock/the-only-girl-you-loved.jpg
 url: the-only-girl-you-loved
-popup: true
+popup: false
 ---
 
 He was shy since childhood, and didn’t know how to interact with a girl !! He was a late bloomer. Although he had many crushes they were just crushes! All was going pretty well until he met this girl !! She was kind, she was pretty! you know you do good for people and always get used, he was that kind of guy, but still, he didn’t abandon kindness. It was the first time ever someone was kind to him !! You meet very few people in your life with whom your vibes match. You can talk with them about any topic for hours that was the bond they shared.
